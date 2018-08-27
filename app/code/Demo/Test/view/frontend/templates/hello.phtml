@@ -1,0 +1,31 @@
+<h1><?php
+$this->getCatalogSession()->setMyName('Mageplaz');
+echo $block->getCatalogSession()->getMyName();
+echo "<br><br>";
+echo $this->getHelloWorldTxt(); ?></h1>
+<div id="weather"></div>
+<input type="text" id="datepicker"/>
+<div id="datepicker"></div>
+<script>
+    require(['jquery', 'simple_weather', 'mage/calendar'], function ($) {
+        $(function(){
+            $.simpleWeather({
+                location: 'Hanoi, VN',
+                woeid: '',
+                unit: 'c',
+                success: function(weather) {
+                    html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+                    html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+                    html += '<li class="currently">'+weather.currently+'</li>';
+                    html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
+
+                    $("#weather").html(html);
+                },
+                error: function(error) {
+                    $("#weather").html('<p>'+error+'</p>');
+                }
+            });
+            $("#datepicker").datepicker();
+        });
+    });
+</script>

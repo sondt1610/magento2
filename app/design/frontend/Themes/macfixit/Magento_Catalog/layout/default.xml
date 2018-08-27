@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+        <!--
+        /**
+         * Copyright © Magento, Inc. All rights reserved.
+         * See COPYING.txt for license details.
+         */
+        -->
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<body>
+    <!--Chi tiet san pham-->
+    <!--<referenceBlock name="advanced-search-link" remove="true"/>-->
+    <!--<referenceBlock name="catalog.compare.sidebar" remove="true"/>-->
+    <!--<referenceBlock name="wishlist_sidebar" remove="true"/>-->
+
+    <!--<referenceContainer name="product.info.main">-->
+        <!--<block class="Demo\Test\Block\HelloWorld" name="detail_pr" template="Demo_Test::product_list.phtml" before="-">-->
+        <!--</block>-->
+    <!--</referenceContainer>-->
+    <!--<move element="product.info.stock.sku" destination="div.sidebar.additional" as="sku" before="-"/>-->
+    <!--<move element="product.price.final" destination="div.sidebar.additional" as="final" after="sku"/>-->
+    <!--<move element="product.info.simple" destination="div.sidebar.additional" as="info_sp" after="final"/>-->
+    <!--<move element="product.info" destination="div.sidebar.additional" as="info_pr" after="info_sp"/>-->
+    <!--<move element="product.info.addto" destination="div.sidebar.additional" as="info_addto" after="info_pr"/>-->
+    <!--<move element="product.info.social" destination="div.sidebar.additional" as="info_social" after="info_addto"/>-->
+</body>
+</page>

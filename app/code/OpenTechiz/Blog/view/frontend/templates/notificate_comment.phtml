@@ -1,0 +1,15 @@
+<?php $helper = $this->helper('OpenTechiz\Blog\Helper\UserInfo'); ?>
+<div abc="comment-section" data-bind="scope: 'custom_sectio'">
+    <span style="color: red;" class="content-type" data-bind="text: custom_secti().getCmtCount"></span>
+</div>
+<!--Initialize the specified RequireJS module (Magento_Ui/js/core/app) and load layoute of js with getJsLayout() method-->
+<!--it does not use the XML based UI Component DSL to generate its JSON, nor does it use the XHTML based PHP template system to output its initial nodes.
+It also targets a specific CSS selector in its x-magento-init script-->
+<!--The entire x-magento-init JSON block is configured via <argument> nodes (in default,xml), and then rendered in the phtml template via the block’s getJsLayout method.-->
+<script type="text/x-magento-init">
+{
+    "[abc=comment-section]": {
+        "Magento_Ui/js/core/app": <?php /* @escapeNotVerified */ echo $block->getJsLayout(); ?>
+    }
+}
+</script>

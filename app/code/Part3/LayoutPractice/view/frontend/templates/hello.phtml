@@ -1,0 +1,11 @@
+<h1><?php
+$this->getCatalogSession()->setMyName('Mageplaz');
+echo $block->getCatalogSession()->getMyName();
+echo "<br><br>";
+echo $this->getHelloWorldTxt(); ?></h1>
+<?php
+$productCollection = $block->getProductCollection();
+echo "<pre>";
+print_r($productCollection);
+echo "</pre>";
+echo "fsfs";

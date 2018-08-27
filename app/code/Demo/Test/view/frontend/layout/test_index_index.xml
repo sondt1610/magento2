@@ -1,0 +1,11 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd" layout="1column">
+    <head>
+        <title>Dự báo thời tiết</title>
+        <css src="Demo_Test::css/style.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Demo\Test\Block\HelloWorld" name="helloworld" template="hello.phtml" />
+        </referenceContainer>
+    </body>
+</page>

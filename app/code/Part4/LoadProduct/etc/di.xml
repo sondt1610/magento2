@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Catalog\Model\Product" type="Part4\LoadProduct\Model\Catalog\Product" />
+    <preference for="Part4\LoadProduct\Block\ShowHello" type="Part4\LoadProduct\Block\DisplayHello" />
+    <preference for="Part4\LoadProduct\Api\Data\Test" type="Part4\LoadProduct\Block\Test" />
+    <preference for="Part4\LoadProduct\Api\Data\Test" type="Part4\LoadProduct\Block\ShowTest" />
+    <!--<type name="Part4\LoadProduct\Block\DisplayHello">-->
+        <!--<arguments>-->
+            <!--<argument name="showHello" xsi:type="object">Part4\LoadProduct\Block\DisplayHello</argument>-->
+        <!--</arguments>-->
+    <!--</type>-->
+</config>
+
