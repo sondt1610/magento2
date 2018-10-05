@@ -49,6 +49,7 @@ class Email extends \Magento\Framework\App\Helper\AbstractHelper
                 ->getTransport();
             $transport->sendMessage();
         } catch (\Exception $e) {
+            echo $e->getMessage();die();
             $this->logger->debug($e->getMessage());
         }
     }
