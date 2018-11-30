@@ -2,5 +2,8 @@
     <type name="Demo\Test\Controller\Index\Example">
         <plugin name="Mageplaza_HelloWorld_Plugin" type="Demo\Test\Plugin\ExamplePlugin" sortOrder="10" disabled="false"  />
     </type>
+    <type name="Magento\Catalog\Api\ProductRepositoryInterface">
+        <plugin name="get_attr_extension" type="Demo\Test\Plugin\ProductGet"/>
+    </type>
 </config>
 
