@@ -160,17 +160,17 @@ class Keyword extends \Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\Abs
                                 'title' => __('All post related'),
                             ],
                             'imports' => [
-                                'state' => '!index=create_category:responseStatus'
+                                'state' => '!index=create_catego:responseStatus'
                             ],
                         ],
                     ],
                 ],
                 'children' => [
-                    'create_category' => [
+                    'create_drupal' => [
                         'arguments' => [
                             'data' => [
                                 'config' => [
-                                    'label' => '',
+                                    'label' => 'fgds',
                                     'componentType' => 'container',
                                     'component' => 'Magento_Ui/js/form/components/insert-form',
                                     'dataScope' => '',
@@ -236,7 +236,7 @@ class Keyword extends \Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\Abs
                         'arguments' => [
                             'data' => [
                                 'config' => [
-                                    'title' => __('New post'),
+                                    'title' => __('Search'),
                                     'formElement' => 'container',
                                     'additionalClasses' => 'admin__field-small',
                                     'componentType' => 'container',

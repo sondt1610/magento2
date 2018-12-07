@@ -28,7 +28,9 @@ class Index extends \Magento\Framework\App\Action\Action
     public function execute()
     {
         $product = $this->_productRepository->getById("1");
-        $abc  = $product->getExtensionAttributes()->getDrupalProductKeywords();
+//        $abc  = $product->getExtensionAttributes()->setPost('sdfgsd');
+//        $def  = $product->getExtensionAttributes()->getPost();
+        die('dfg');
         var_dump($abc);
         //var_dump($product);
         // Create banner instance

@@ -145,7 +145,7 @@
         <column name="id">
             <settings>
                 <filter>textRange</filter>
-                <label translate="true">ID</label>
+                <label translate="true">Post ID</label>
                 <sorting>asc</sorting>
             </settings>
         </column>
@@ -160,6 +160,18 @@
                 </item>
             </argument>
         </column>
+        <column name="title">
+            <settings>
+                <filter>text</filter>
+                <editor>
+                    <validation>
+                        <rule name="required-entry" xsi:type="boolean">true</rule>
+                    </validation>
+                    <editorType>text</editorType>
+                </editor>
+                <label translate="true">Title</label>
+            </settings>
+        </column>
         <column name="link">
             <settings>
                 <filter>text</filter>
@@ -169,40 +181,41 @@
                     </validation>
                     <editorType>text</editorType>
                 </editor>
-                <label translate="true">Link</label>
+                <label translate="true">URL</label>
             </settings>
         </column>
-        <column name="sort_order">
-            <settings>
-                <filter>text</filter>
-                <editor>
-                    <validation>
-                        <rule name="required-entry" xsi:type="boolean">true</rule>
-                    </validation>
-                    <editorType>text</editorType>
-                </editor>
-                <label translate="true">Sort Order</label>
-            </settings>
-        </column>
-        <column name="status" component="Magento_Ui/js/grid/columns/select">
-            <settings>
-                <options class="Robin\Banner\Model\Banner\Source\Status"/>
-                <filter>select</filter>
-                <editor>
-                    <editorType>select</editorType>
-                </editor>
-                <dataType>select</dataType>
-                <label translate="true">Status</label>
-            </settings>
-        </column>
-        <actionsColumn name="actions" class="Robin\Banner\Ui\Component\Listing\Column\Actions">
-            <argument name="data" xsi:type="array">
-                <item name="config" xsi:type="array">
-                    <item name="resizeEnabled" xsi:type="boolean">true</item>
-                    <item name="resizeDefaultWidth" xsi:type="string">107</item>
-                    <item name="indexField" xsi:type="string">id</item>
-                </item>
-            </argument>
-        </actionsColumn>
+
+        <!--<column name="sort_order">-->
+            <!--<settings>-->
+                <!--<filter>text</filter>-->
+                <!--<editor>-->
+                    <!--<validation>-->
+                        <!--<rule name="required-entry" xsi:type="boolean">true</rule>-->
+                    <!--</validation>-->
+                    <!--<editorType>text</editorType>-->
+                <!--</editor>-->
+                <!--<label translate="true">Sort Order</label>-->
+            <!--</settings>-->
+        <!--</column>-->
+        <!--<column name="status" component="Magento_Ui/js/grid/columns/select">-->
+            <!--<settings>-->
+                <!--<options class="Robin\Banner\Model\Banner\Source\Status"/>-->
+                <!--<filter>select</filter>-->
+                <!--<editor>-->
+                    <!--<editorType>select</editorType>-->
+                <!--</editor>-->
+                <!--<dataType>select</dataType>-->
+                <!--<label translate="true">Status</label>-->
+            <!--</settings>-->
+        <!--</column>-->
+        <!--<actionsColumn name="actions" class="Robin\Banner\Ui\Component\Listing\Column\Actions">-->
+            <!--<argument name="data" xsi:type="array">-->
+                <!--<item name="config" xsi:type="array">-->
+                    <!--<item name="resizeEnabled" xsi:type="boolean">true</item>-->
+                    <!--<item name="resizeDefaultWidth" xsi:type="string">107</item>-->
+                    <!--<item name="indexField" xsi:type="string">id</item>-->
+                <!--</item>-->
+            <!--</argument>-->
+        <!--</actionsColumn>-->
     </columns>
 </listing>
